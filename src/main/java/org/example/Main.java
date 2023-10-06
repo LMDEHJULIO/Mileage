@@ -20,8 +20,6 @@ public class Main {
 
         double total = (int) (price * qty) + fee.get();
 
-
-        System.out.println(total);
-        System.out.println(fee.orElse(0.0));
+        TotalDisplay.display(name, qty, price, distance, total);
     }
 }

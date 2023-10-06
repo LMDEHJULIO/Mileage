@@ -18,16 +18,16 @@ public class TotalDisplay {
 					      Thank you. Come Again!!!
      */
 
-    public void display(String name,double qty, double price, double miles, double total){
-        System.out.printf("%33s", "------------------------------------------- \n");
+    public static void display(String name, double qty, double price, double miles, double total){
+        System.out.printf("%50s", "------------------------------------------- \n");
 //        System.out.printf("%33s ");
 //        System.out.printf("%33s ");
 //        System.out.printf("%33s ");
-
+        System.out.println(" ");
         System.out.printf("%-15s%-15s%-15s%-15s%-15s\n","Product", "Qty", "Price", "Miles", "Total");
         System.out.printf("%-15s%-15s%-15s%-15s%-15s\n","---", "---", "---", "---", "---");
         System.out.printf("%-15s%-15.2f%-15.2f%-15.2f%-15.2f\n", name, qty, price, miles, total);
-
+        System.out.println(" ");
         System.out.printf("%46s","Thank you. Come Again!!!");
     }
 
