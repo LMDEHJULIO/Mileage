@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         MileageScanner mileageSurvey = new MileageScanner();
 
-        mileageSurvey.promptUser(mileageSurvey.prompts.get(1));
+        mileageSurvey.runSurvey();
+
     }
 }
