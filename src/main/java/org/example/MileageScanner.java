@@ -30,9 +30,9 @@ public class MileageScanner {
         }
     }
 
-    interface PromptMethod {
-        void execute();
-    }
+//    interface PromptMethod {
+//        void execute();
+//    }
 
     public MileageScanner() {
         prompts.put(PromptEnum.QUANTITY, () -> scanner.nextInt());

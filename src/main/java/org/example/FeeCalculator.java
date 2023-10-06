@@ -15,7 +15,7 @@ public class FeeCalculator {
         fees.put(new PriceRange(0, 5), 2.0);
         fees.put(new PriceRange(51, 100000), 20.00);
     }
-    //IntelliJ suggested Optional
+    //IntelliJ suggested Optional think abt why
     public Optional<Double> calcFee(double miles){
 
         return fees

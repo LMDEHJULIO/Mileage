@@ -18,6 +18,6 @@ public class Main {
         Optional<Double> fee = feeCalculator.calcFee(distance);
 
 
-        System.out.println(fee);
+        System.out.println(fee.orElse(0.0));
     }
 }

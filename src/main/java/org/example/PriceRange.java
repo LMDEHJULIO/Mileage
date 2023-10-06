@@ -9,7 +9,7 @@ public class PriceRange {
         this.max = max;
     }
 
-    public boolean withinRange(int miles) {
+    public boolean withinRange(double miles) {
         return miles >= min && miles <= max;
     }
 }
