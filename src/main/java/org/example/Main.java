@@ -9,6 +9,7 @@ public class Main {
 
 //        mileageSurvey.runSurvey();
 
+        String name = (String) mileageSurvey.promptUser((MileageScanner.PromptEnum.NAME));
         int qty = (int) mileageSurvey.promptUser(MileageScanner.PromptEnum.QUANTITY);
         double price = (double) mileageSurvey.promptUser(MileageScanner.PromptEnum.PRICE);
         double distance = (double) mileageSurvey.promptUser(MileageScanner.PromptEnum.DELIVERY_DISTANCE);

@@ -11,6 +11,7 @@ public class MileageScanner {
     Map<PromptEnum, Supplier<Object>> prompts = new HashMap<>();
 
     public enum PromptEnum {
+        NAME("Enter the product name"),
         QUANTITY("Enter the quantity: "),
         PRICE("Enter the price: "),
         DELIVERY_DISTANCE("Enter the delivery distance (miles): ");
@@ -35,6 +36,7 @@ public class MileageScanner {
 //    }
 
     public MileageScanner() {
+        prompts.put(PromptEnum.NAME, () -> scanner.nextLine());
         prompts.put(PromptEnum.QUANTITY, () -> scanner.nextInt());
         prompts.put(PromptEnum.PRICE, () -> scanner.nextDouble());
         prompts.put(PromptEnum.DELIVERY_DISTANCE, () -> scanner.nextDouble());
@@ -56,6 +58,7 @@ public class MileageScanner {
     }
 
     public void runSurvey(){
+        this.promptUser(MileageScanner.PromptEnum.NAME);
         this.promptUser(MileageScanner.PromptEnum.QUANTITY);
         this.promptUser(MileageScanner.PromptEnum.PRICE);
         this.promptUser(MileageScanner.PromptEnum.DELIVERY_DISTANCE);
