@@ -16,8 +16,16 @@ public class FeeDisplay {
     static int fee4 = 15;
     static int fee5 = 20;
 
-    // need to input params backwards for the formatting
+    // need to input params backwards for the formatting - weird but works for now
     //    https://stackoverflow.com/questions/19961671/java-creating-blank-spaces-with-printf
+
+    // Should be in this format
+    //        Distance 	    = Fee
+    //        0 -  5 miles  = $2
+    //        6 - 15 miles  = $5
+    //        16 - 25 miles = $10
+    //        26 - 50	miles = $15
+    //        More than 50 miles = $20
 
     public static void display(){
         System.out.printf("%20s = Fee\n", "Distance");
