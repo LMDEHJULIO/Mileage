@@ -17,7 +17,10 @@ public class Main {
 
         Optional<Double> fee = feeCalculator.calcFee(distance);
 
+        double total = (int) (price * qty) + fee.get();
 
+
+        System.out.println(total);
         System.out.println(fee.orElse(0.0));
     }
 }

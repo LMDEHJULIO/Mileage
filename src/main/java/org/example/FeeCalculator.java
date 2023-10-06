@@ -24,6 +24,5 @@ public class FeeCalculator {
                .filter(entry -> entry.getKey().withinRange(miles))
                .map(Map.Entry::getValue)
                .findFirst();
-
     }
 }
